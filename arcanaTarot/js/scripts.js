@@ -147,20 +147,31 @@ var cardarray = [
 
 ];
 
-cardarray.prototype.shuffle = function( {
-  var i = this.length, j, temp;
-  while(i-- > 0) {
-    j = math.floor(Math.random() * (i+1));
-    temp = this[j];
-    this[j] = this[i];
-    this[i] = temp;
+function shuffle(shufflearray) {
+  var i = cardarray.length;
+  var j;
+  var temp;
+  while (i-- >0) {
+
   }
-  return this;
-});
-var result = cardarray.shuffle();
+  
+}
+
+// cardarray.prototype.shuffle = function( {
+//   var i = this.length, j, temp;
+//   while(i-- > 0) {
+//     j = math.floor(Math.random() * (i+1));
+//     temp = this[j];
+//     this[j] = this[i];
+//     this[i] = temp;
+//   }
+//   return this;
+// });
+// var result = cardarray.shuffle();
 
 $(function() {
-   for (var i=0;i<result.length;i++) {
-      $(".card-readings").append(result[i]);
-   }
-});
+   var cardsubset= shuffle(cardarray).slice(0,9);
+   for (card of cardsubset) {
+   var $img = $('<img src=""/>').attr('src', card.card);
+ }
+   $('.card-images').append($img);
