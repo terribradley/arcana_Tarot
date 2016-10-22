@@ -1,0 +1,13 @@
+@import "normalize";
+@import "variables";
+@import "header";
+@import "form";
+
+html {
+  background-color: $color-one;
+}
+.card-images {
+  height: 200px;
+  margin: 100px;
+  background-color: red;
+}
