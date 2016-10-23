@@ -537,12 +537,17 @@ button:hover:before {
   width: 100%;
   transition: 800ms ease all; }
 
+.card-images {
+  width: 90%;
+  margin: 0 5%; }
+  .card-images div {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%; }
+    .card-images div img:nth-of-type(1) {
+      align-self: center; }
+
 html {
   background-color: #fbcea2; }
-
-.card-images {
-  height: 200px;
-  margin: 100px;
-  background-color: red; }
 
 /*# sourceMappingURL=main.css.map */
